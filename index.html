@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Constrular Construtora | Casas residenciais em Parnaíba-PI</title>
+<meta name="description" content="Construtora Constrular: construção de casas residenciais em Parnaíba-PI, financiáveis pela Caixa, com entrada facilitada. Projetos, execução de obras, avaliação de imóveis e consultoria.">
+<meta name="theme-color" content="#0F5FB3">
+<meta property="og:title" content="Constrular Construtora | Parnaíba-PI">
+<meta property="og:description" content="Casas residenciais do projeto à entrega da chave, financiáveis pela Caixa.">
+<meta property="og:image" content="img/casa-tijolinho.webp">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F5FB3'/%3E%3Cpath d='M79 33A34 34 0 1 0 82 62' fill='none' stroke='%23fff' stroke-width='11' stroke-linecap='round'/%3E%3Cpath d='M31 58L50 41L69 58' fill='none' stroke='%23fff' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='44' y='56' width='12' height='11' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" as="image" href="img/casa-tijolinho.webp">
+<script>if("IntersectionObserver" in window && !(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches)) document.documentElement.classList.add("js");</script>
+<style>
+:root{
+  --azul:#0F5FB3;
+  --azul-escuro:#0B4A8C;
+  --noite:#0A2540;
+  --ceu:#EAF2FB;
+  --concreto:#F4F5F6;
+  --linha:#D9DEE4;
+  --texto:#1B2733;
+  --texto-suave:#4F5D6B;
+  --trena:#F2B705;
+  --branco:#FFFFFF;
+  --wa:#1FA855;
+  --raio:6px;
+  --max:1240px;
+  --gutter:clamp(16px,4vw,40px);
+  --header-h:72px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+body{margin:0;font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--texto);background:var(--branco);overflow-x:hidden;font-variation-settings:"wdth" 100}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--azul)}
+button{font:inherit;cursor:pointer}
+h1,h2,h3{font-family:inherit;color:var(--noite);margin:0;line-height:1.08;letter-spacing:-.01em}
+h1,h2{font-stretch:118%;font-variation-settings:"wdth" 118}
+h2{font-size:clamp(1.85rem,1.3rem + 2.3vw,3rem);font-weight:750}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+:focus-visible{outline:3px solid var(--trena);outline-offset:3px;border-radius:3px}
+section[id]{scroll-margin-top:calc(var(--header-h) + 8px)}
+.skip{position:absolute;left:12px;top:-60px;background:var(--noite);color:#fff;padding:10px 14px;border-radius:var(--raio);z-index:200;text-decoration:none}
+.skip:focus{top:12px}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:.8em 1.4em;border-radius:var(--raio);font-weight:650;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-azul{background:var(--azul);color:#fff}
+.btn-azul:hover{background:var(--azul-escuro)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#178A45}
+.btn-linha{border-color:var(--noite);color:var(--noite);background:transparent}
+.btn-linha:hover{background:var(--noite);color:#fff}
+
+/* Header */
+.header{position:fixed;inset:0 0 auto 0;height:var(--header-h);background:rgba(255,255,255,.96);border-bottom:1px solid transparent;z-index:100;transition:border-color .2s,box-shadow .2s}
+@supports (backdrop-filter:blur(8px)){.header{background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px)}}
+.header.rolou{border-color:var(--linha)}
+.header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--noite);flex:none}
+.logo svg{width:40px;height:40px;flex:none}
+.logo span{font-weight:750;font-size:1.3rem;letter-spacing:-.01em;font-stretch:112%;font-variation-settings:"wdth" 112}
+.nav{display:flex;align-items:center;gap:clamp(14px,2vw,30px)}
+.nav a{color:var(--texto);text-decoration:none;font-weight:550;font-size:.98rem;padding:6px 0;position:relative}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--azul);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.nav a:not(.btn):hover::after{transform:scaleX(1)}
+.nav .btn{min-height:44px;padding:.55em 1.1em;font-size:.95rem}
+.menu-btn{display:none;width:48px;height:48px;border:0;background:transparent;border-radius:var(--raio);align-items:center;justify-content:center;margin-right:-8px}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--noite);position:relative;transition:background .2s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:24px;height:2px;background:var(--noite);transition:transform .25s}
+.menu-btn span::before{top:-7px}.menu-btn span::after{top:7px}
+.menu-aberto .menu-btn span{background:transparent}
+.menu-aberto .menu-btn span::before{transform:translateY(7px) rotate(45deg)}
+.menu-aberto .menu-btn span::after{transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:960px){
+  .menu-btn{display:inline-flex}
+  .nav{position:fixed;top:var(--header-h);left:0;right:0;height:calc(100dvh - var(--header-h));flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:12px var(--gutter) 32px;overflow-y:auto;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .2s,transform .2s,visibility .2s}
+  .menu-aberto .nav{visibility:visible;opacity:1;transform:none}
+  .nav a:not(.btn){font-size:1.25rem;padding:16px 0;border-bottom:1px solid var(--linha)}
+  .nav a:not(.btn)::after{display:none}
+  .nav .btn{margin-top:24px;min-height:54px;font-size:1.05rem}
+  body.menu-aberto{overflow:hidden}
+}
+
+/* Hero */
+.hero{padding:calc(var(--header-h) + clamp(28px,5vw,64px)) 0 clamp(48px,7vw,96px);background:linear-gradient(var(--ceu),var(--ceu)) no-repeat 0 100%/100% 34%}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hero-texto{max-width:620px}
+.hero-local{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--azul);margin-bottom:18px;font-size:1rem}
+.hero-local svg{width:18px;height:18px}
+.hero h1{font-size:clamp(2.3rem,1.4rem + 4vw,4.4rem);font-weight:800;line-height:1.02;letter-spacing:-.02em;margin-bottom:22px;text-wrap:balance}
+.hero-sub{font-size:clamp(1.05rem,1rem + .35vw,1.25rem);color:var(--texto-suave);max-width:34em;margin-bottom:28px}
+.hero-acoes{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.hero-fatos{list-style:none;margin:0;padding:22px 0 0;border-top:1px solid var(--linha);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hero-fatos li{font-size:.95rem;line-height:1.35;color:var(--texto-suave)}
+.hero-fatos strong{display:block;color:var(--noite);font-size:1.02rem;margin-bottom:2px}
+.hero-foto{position:relative;margin:0}
+.hero-foto .moldura{position:relative;border-radius:var(--raio);overflow:hidden;aspect-ratio:4/4.4;background:var(--linha);box-shadow:0 30px 60px -30px rgba(10,37,64,.45)}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-foto figcaption{margin-top:12px;font-size:.9rem;color:var(--texto-suave)}
+.trena{position:absolute;left:-18px;top:0;bottom:0;width:10px;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+.trena::before{content:"";position:absolute;left:4px;top:0;bottom:0;width:2px;background:var(--trena)}
+.trena i{display:block;width:10px;height:2px;background:var(--trena)}
+@media (max-width:860px){
+  .hero{background-size:100% 26%}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-texto{max-width:none}
+  .hero-foto{order:2;max-width:560px;width:100%;margin-inline:auto}
+  .trena{display:none}
+}
+@media (max-width:520px){
+  .hero-acoes .btn{flex:1 1 100%}
+  .hero-fatos{grid-template-columns:1fr;gap:12px}
+  .hero-fatos li{display:flex;gap:8px;align-items:baseline}
+  .hero-fatos strong{display:inline;margin:0}
+}
+.entra{opacity:0;transform:translateY(14px);animation:entra .7s cubic-bezier(.2,.7,.2,1) forwards}
+.entra.d1{animation-delay:.08s}.entra.d2{animation-delay:.16s}.entra.d3{animation-delay:.24s}.entra.d4{animation-delay:.32s}
+@keyframes entra{to{opacity:1;transform:none}}
+
+/* Seções */
+.secao{padding:clamp(64px,9vw,120px) 0}
+.secao-cab{max-width:720px;margin-bottom:clamp(28px,4vw,48px)}
+.secao-cab p{color:var(--texto-suave);font-size:1.1rem;margin-top:16px;margin-bottom:0}
+
+/* Serviços */
+.servicos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--noite)}
+.servico{padding:26px 24px 8px 0}
+.servico + .servico{padding-left:24px;border-left:1px solid var(--linha)}
+.servico svg{width:34px;height:34px;color:var(--azul);margin-bottom:16px}
+.servico h3{margin-bottom:8px}
+.servico p{color:var(--texto-suave);font-size:.98rem;margin:0}
+@media (max-width:960px){
+  .servicos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .servico,.servico + .servico{padding:24px 20px 24px 0;border-left:0}
+  .servico:nth-child(2n){padding-left:20px;border-left:1px solid var(--linha)}
+  .servico:nth-child(n+3){border-top:1px solid var(--linha)}
+}
+@media (max-width:560px){
+  .servicos{grid-template-columns:1fr}
+  .servico,.servico + .servico,.servico:nth-child(2n){padding:22px 0;border-left:0}
+  .servico + .servico{border-top:1px solid var(--linha)}
+}
+
+/* Catálogo */
+.catalogo{background:var(--concreto)}
+.filtro{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px}
+.filtro-titulo{font-weight:650;color:var(--noite);margin-right:6px;width:100%}
+.chip{min-height:44px;padding:.45em 1em;border:1.5px solid var(--linha);background:#fff;border-radius:999px;color:var(--noite);font-weight:600;font-size:.98rem;transition:border-color .15s,background .15s,color .15s}
+.chip:hover{border-color:var(--azul)}
+.chip[aria-pressed="true"]{background:var(--noite);border-color:var(--noite);color:#fff}
+.filtro-info{color:var(--texto-suave);font-size:.98rem;margin:0 0 10px;min-height:1.6em}
+.modelos{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.modelo{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);display:flex;flex-direction:column;overflow:hidden}
+.modelo[hidden]{display:none}
+.modelo-planta{background:var(--ceu);padding:18px 18px 10px;display:flex;justify-content:center;align-items:center;height:190px}
+.modelo-planta svg{height:100%;width:auto;max-width:100%;overflow:visible}
+.modelo-corpo{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.modelo h3{font-size:1.45rem;font-stretch:112%;font-variation-settings:"wdth" 112}
+.modelo-dados{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 14px}
+.modelo-dados dt{font-size:.82rem;color:var(--texto-suave);line-height:1.3}
+.modelo-dados dd{margin:0;color:var(--noite);font-weight:700;font-size:1.02rem;white-space:nowrap}
+.planta-legenda{display:flex;gap:14px;flex-wrap:wrap;font-size:.88rem;color:var(--texto-suave);margin:0 0 22px}
+.planta-legenda span{display:inline-flex;align-items:center;gap:7px}
+.planta-legenda i{display:inline-block;width:14px;height:14px;border:1.5px solid var(--noite);background:#fff}
+.planta-legenda i.c{border:1px dashed var(--azul);background:rgba(15,95,179,.18)}
+.planta-legenda i.t{width:16px;height:3px;border:0;background:var(--trena)}
+@media (max-width:600px){
+  .modelos{grid-template-columns:1fr;gap:12px}
+  .modelo{display:grid;grid-template-columns:104px 1fr}
+  .modelo-planta{height:auto;padding:14px 6px 10px;align-items:flex-start}
+  .modelo-planta svg{height:auto;width:100%;max-height:180px}
+  .modelo-corpo{padding:14px 16px 16px}
+  .modelo h3{font-size:1.2rem}
+  .modelo-dados{grid-template-columns:1fr;gap:6px;margin:8px 0 10px}
+  .modelo-dados div{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .modelo-preco strong{font-size:1.22rem}
+  .modelo .btn{min-height:46px}
+}
+.modelo-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;padding:0;list-style:none}
+.modelo-tags li{font-size:.82rem;font-weight:600;color:var(--azul-escuro);background:var(--ceu);padding:3px 9px;border-radius:4px}
+.modelo-preco{margin-top:auto;padding-top:12px;border-top:1px dashed var(--linha);font-size:.9rem;color:var(--texto-suave)}
+.modelo-preco strong{display:block;font-size:1.4rem;color:var(--noite);font-weight:750;line-height:1.2}
+.modelo .btn{margin-top:14px;width:100%;min-height:48px}
+.catalogo-nota{margin-top:26px;font-size:.88rem;color:var(--texto-suave);max-width:70ch}
+.vazio{background:#fff;border:1px dashed var(--linha);border-radius:var(--raio);padding:28px;text-align:center;color:var(--texto-suave)}
+.vazio[hidden]{display:none}
+
+/* Etapas */
+.etapas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:etapa}
+.etapa{position:relative;padding:0 22px 0 0}
+.etapa-num{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.etapa-num span{width:44px;height:44px;border-radius:50%;background:var(--azul);color:#fff;font-weight:750;display:grid;place-items:center;flex:none;font-size:1.05rem}
+.etapa-num::after{content:"";flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--linha) 0 8px,transparent 8px 14px)}
+.etapa:last-child .etapa-num::after{display:none}
+.etapa h3{font-size:1.12rem;margin-bottom:8px}
+.etapa p{font-size:.96rem;color:var(--texto-suave);margin:0}
+@media (max-width:1000px){
+  .etapas{grid-template-columns:1fr;gap:0}
+  .etapa{display:grid;grid-template-columns:44px 1fr;column-gap:18px;padding:0 0 28px}
+  .etapa-num{grid-row:span 2;flex-direction:column;margin:0;align-self:stretch}
+  .etapa-num::after{width:2px;height:auto;flex:1;background:repeating-linear-gradient(180deg,var(--linha) 0 8px,transparent 8px 14px)}
+  .etapa:last-child{padding-bottom:0}
+  .etapa h3{padding-top:9px}
+}
+
+/* Projetos 3D */
+.projetos{background:var(--noite);color:#E3ECF6}
+.projetos h2{color:#fff}
+.projetos .secao-cab p{color:#B8C8DA}
+.grade-projetos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.grade-projetos button{position:relative;border:0;padding:0;background:#13304F;border-radius:var(--raio);overflow:hidden;aspect-ratio:4/3;grid-column:span 2}
+.grade-projetos button:nth-child(1),.grade-projetos button:nth-child(2){grid-column:span 3;aspect-ratio:16/11}
+.grade-projetos img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.grade-projetos button:hover img{transform:scale(1.03)}
+@media (max-width:860px){
+  .grade-projetos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grade-projetos button,.grade-projetos button:nth-child(1),.grade-projetos button:nth-child(2){grid-column:span 1;aspect-ratio:1/1}
+  .grade-projetos button:nth-child(1),.grade-projetos button:last-child{grid-column:span 2;aspect-ratio:16/11}
+}
+.projetos-nota{margin-top:20px;font-size:.9rem;color:#9FB3C9}
+
+/* Obras entregues */
+.grade-obras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:dense;gap:12px}
+.grade-obras button{border:0;padding:0;background:var(--linha);border-radius:var(--raio);overflow:hidden;aspect-ratio:1/1;position:relative}
+.grade-obras button.alta{grid-row:span 2;aspect-ratio:auto}
+.grade-obras img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.grade-obras button:hover img{transform:scale(1.03)}
+@media (max-width:860px){.grade-obras{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.grade-obras{gap:8px}}
+.lupa{position:absolute;right:10px;bottom:10px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;opacity:0;transition:opacity .2s}
+.lupa svg{width:18px;height:18px;color:var(--noite)}
+button:hover > .lupa,button:focus-visible > .lupa{opacity:1}
+@media (hover:none){.lupa{opacity:.9}}
+
+/* Entregas */
+.entregas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:clamp(40px,6vw,72px)}
+.entrega{margin:0}
+.entrega .foto{aspect-ratio:4/5;border-radius:var(--raio);overflow:hidden;background:var(--linha)}
+.entrega img{width:100%;height:100%;object-fit:cover}
+.entrega figcaption{font-size:.95rem;color:var(--texto-suave);margin-top:10px}
+.entregas-cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-top:clamp(56px,8vw,96px)}
+.entregas-cab h3{font-size:clamp(1.4rem,1.1rem + 1.2vw,2rem);font-stretch:112%;font-variation-settings:"wdth" 112;max-width:20ch}
+.entregas-cab p{max-width:46ch;color:var(--texto-suave);margin:0}
+@media (max-width:760px){.entregas{grid-template-columns:1fr 1fr}.entrega:last-child{grid-column:span 2}.entrega:last-child .foto{aspect-ratio:16/10}}
+@media (max-width:480px){.entregas{grid-template-columns:1fr}.entrega:last-child{grid-column:auto}.entrega .foto,.entrega:last-child .foto{aspect-ratio:4/3.4}}
+
+/* Sobre */
+.sobre{background:var(--ceu)}
+.sobre .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,88px);align-items:center}
+.sobre-fotos{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sobre-fotos figure{margin:0;border-radius:var(--raio);overflow:hidden;background:var(--linha)}
+.sobre-fotos .f1{grid-column:1/2;grid-row:1/3}
+.sobre-fotos .f2,.sobre-fotos .f3{aspect-ratio:1/1}
+.sobre-fotos img{width:100%;height:100%;object-fit:cover}
+.sobre-texto p{color:var(--texto-suave);max-width:60ch}
+.sobre-texto h2{margin-bottom:22px}
+.assinatura{display:flex;align-items:center;gap:14px;margin-top:28px;padding-top:22px;border-top:1px solid #C9D8E8}
+.assinatura strong{display:block;color:var(--noite);font-size:1.08rem}
+.assinatura span{font-size:.95rem;color:var(--texto-suave)}
+.selo{width:52px;height:52px;flex:none}
+@media (max-width:860px){.sobre .wrap{grid-template-columns:1fr}.sobre-fotos{max-width:560px}}
+
+/* FAQ */
+.faq .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,88px);align-items:start}
+.faq .secao-cab{position:sticky;top:calc(var(--header-h) + 24px);margin-bottom:0}
+@media (max-width:860px){.faq .wrap{grid-template-columns:1fr}.faq .secao-cab{position:static}}
+.perguntas{border-top:2px solid var(--noite)}
+.perguntas details{border-bottom:1px solid var(--linha)}
+.perguntas summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;cursor:pointer;font-weight:650;font-size:1.1rem;color:var(--noite)}
+.perguntas summary::-webkit-details-marker{display:none}
+.perguntas summary::after{content:"";width:14px;height:14px;flex:none;border-right:2px solid var(--azul);border-bottom:2px solid var(--azul);transform:rotate(45deg) translate(-3px,-3px);transition:transform .2s}
+.perguntas details[open] summary::after{transform:rotate(225deg) translate(-3px,-3px)}
+.perguntas .resp{padding:0 0 22px;color:var(--texto-suave);max-width:62ch}
+.perguntas .resp p:last-child{margin-bottom:0}
+
+/* Contato */
+.contato{background:var(--noite);color:#D6E2EF}
+.contato h2{color:#fff;margin-bottom:14px}
+.contato .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px)}
+.contato-info p{color:#B8C8DA}
+.contato-lista{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:18px}
+.contato-lista li{display:flex;gap:14px;align-items:flex-start}
+.contato-lista svg{width:22px;height:22px;flex:none;color:var(--trena);margin-top:3px}
+.contato-lista a{color:#fff;text-decoration:none;font-weight:600;border-bottom:1px solid rgba(255,255,255,.3);display:inline-block;padding:10px 0 2px;margin-top:-10px;line-height:1.5}
+.contato-lista a::before{content:"";position:absolute;inset:-6px 0}
+.contato-lista li > div{position:relative;flex:1;min-width:0}
+.contato-lista a:hover{border-color:#fff}
+.contato-lista small{display:block;color:#9FB3C9;font-size:.88rem}
+.mapa{margin-top:30px;border-radius:var(--raio);overflow:hidden;aspect-ratio:16/10;background:#13304F}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+.form{background:#fff;color:var(--texto);border-radius:var(--raio);padding:clamp(22px,3.5vw,36px)}
+.form h3{font-size:1.45rem;margin-bottom:6px}
+.form > p{color:var(--texto-suave);font-size:.98rem}
+.campo{margin-bottom:16px}
+.campo label,.campo legend{display:block;font-weight:650;color:var(--noite);margin-bottom:6px;font-size:.98rem;padding:0}
+.campo fieldset{border:0;padding:0;margin:0}
+.campo input[type=text],.campo input[type=tel],.campo select,.campo textarea{width:100%;font:inherit;font-size:16px;color:var(--texto);background:#fff;border:1.5px solid var(--linha);border-radius:var(--raio);padding:12px 14px;min-height:50px;transition:border-color .15s}
+.campo select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230A2540' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+.campo textarea{min-height:96px;resize:vertical}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:none;border-color:var(--azul);box-shadow:0 0 0 3px rgba(15,95,179,.18)}
+.campo .erro{display:none;color:#B42318;font-size:.9rem;margin-top:6px}
+.campo.invalido input{border-color:#B42318}
+.campo.invalido .erro{display:block}
+.opcoes{display:flex;flex-wrap:wrap;gap:10px}
+.opcoes label{display:flex;align-items:center;gap:8px;font-weight:500;border:1.5px solid var(--linha);border-radius:var(--raio);padding:10px 14px;min-height:46px;cursor:pointer;margin:0;color:var(--texto)}
+.opcoes input{width:18px;height:18px;accent-color:var(--azul);margin:0}
+.opcoes label:has(input:checked){border-color:var(--azul);background:var(--ceu)}
+.form .btn{width:100%;margin-top:6px}
+.form-nota{font-size:.85rem;color:var(--texto-suave);margin:12px 0 0}
+@media (max-width:860px){.contato .wrap{grid-template-columns:1fr}}
+
+/* Rodapé */
+.rodape{background:#071B30;color:#9FB3C9;padding:40px 0 calc(32px + env(safe-area-inset-bottom));font-size:.93rem}
+.rodape .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.rodape .logo{color:#fff}
+.rodape a{color:#D6E2EF}
+.rodape-links{display:flex;flex-wrap:wrap;gap:0 10px;margin-inline:-10px}
+.rodape-links a{display:inline-block;padding:12px 10px;min-height:44px}
+
+/* WhatsApp flutuante */
+.wa-flutuante{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -6px rgba(0,0,0,.35);z-index:90;transition:transform .2s,opacity .2s,visibility .2s}
+.wa-flutuante svg{width:30px;height:30px}
+.wa-flutuante:hover{transform:scale(1.06)}
+.wa-flutuante.oculto{opacity:0;visibility:hidden;transform:translateY(10px)}
+
+/* Lightbox */
+.lightbox{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:rgba(5,15,28,.95);color:#fff}
+.lightbox::backdrop{background:rgba(5,15,28,.95)}
+.lightbox[open]{display:flex;flex-direction:column}
+.lb-palco{flex:1;display:flex;align-items:center;justify-content:center;padding:64px 72px 16px;min-height:0;touch-action:pan-y}
+.lb-palco img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:4px}
+.lb-rodape{display:flex;justify-content:center;align-items:center;gap:16px;padding:10px 16px calc(18px + env(safe-area-inset-bottom));font-size:.95rem;color:#C7D4E2;text-align:center}
+.lb-btn{position:absolute;width:52px;height:52px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;display:grid;place-items:center;transition:background .2s}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:24px;height:24px}
+.lb-fechar{top:max(12px,env(safe-area-inset-top));right:12px}
+.lb-ant{left:12px;top:50%;transform:translateY(-50%)}
+.lb-prox{right:12px;top:50%;transform:translateY(-50%)}
+@media (max-width:640px){.lb-palco{padding:64px 8px 8px}.lb-ant,.lb-prox{top:auto;bottom:calc(8px + env(safe-area-inset-bottom));transform:none}.lb-rodape{padding-inline:72px;flex-direction:column;gap:2px;min-height:76px;justify-content:center}}
+#lb-cont{white-space:nowrap;opacity:.75}
+
+/* TV / telas grandes */
+@media (min-width:1800px){
+  :root{--max:1440px}
+  html{font-size:112.5%}
+}
+@media (min-width:2400px){
+  :root{--max:1800px;--header-h:88px}
+  html{font-size:137.5%}
+  .logo svg{width:52px;height:52px}
+  .modelo-planta{height:240px}
+}
+
+/* ===== Animações ===== */
+@keyframes ergue{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes assenta{from{transform:scale(1.12)}to{transform:none}}
+@keyframes cresceY{from{transform:scaleY(0)}to{transform:none}}
+@keyframes cresceX{from{transform:scaleX(0)}to{transform:none}}
+@keyframes surge{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes troca{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:none}}
+@keyframes abre{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(31,168,85,.55)}70%{box-shadow:0 0 0 16px rgba(31,168,85,0)}100%{box-shadow:0 0 0 0 rgba(31,168,85,0)}}
+@media (prefers-reduced-motion:no-preference){
+  /* Hero: a foto sobe como uma parede e a trena é esticada */
+  .hero-foto .moldura{animation:ergue 1.15s cubic-bezier(.65,0,.35,1) .35s both}
+  .hero-foto .moldura img{animation:assenta 1.6s cubic-bezier(.2,.7,.2,1) .35s both}
+  .trena::before{transform-origin:50% 100%;animation:cresceY 1.15s cubic-bezier(.65,0,.35,1) .35s both}
+  .trena i{transform-origin:0 50%;animation:cresceX .3s ease-out both}
+  .trena i:nth-child(9){animation-delay:.5s}.trena i:nth-child(8){animation-delay:.6s}.trena i:nth-child(7){animation-delay:.7s}
+  .trena i:nth-child(6){animation-delay:.8s}.trena i:nth-child(5){animation-delay:.9s}.trena i:nth-child(4){animation-delay:1s}
+  .trena i:nth-child(3){animation-delay:1.1s}.trena i:nth-child(2){animation-delay:1.2s}.trena i:nth-child(1){animation-delay:1.3s}
+  .hero-foto figcaption{animation:surge .6s ease 1.4s both}
+
+  /* Entrada de blocos ao rolar */
+  .js .secao-cab,.js .entregas-cab,.js .entrega,.js .sobre-texto,.js .perguntas details,.js .contato-info,.js .form,.js .modelo,.js .filtro,.js .servico{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+  .js .visto.secao-cab,.js .visto.entregas-cab,.js .entrega.visto,.js .sobre-texto.visto,.js .perguntas details.visto,.js .contato-info.visto,.js .form.visto,.js .modelo.visto,.js .filtro.visto,.js .servico.visto{opacity:1;transform:none}
+
+  /* Fotos: revelação de baixo para cima, como alvenaria subindo */
+  .js .grade-projetos button img,.js .grade-obras button img,.js .sobre-fotos figure img,.js .entrega .foto img{clip-path:inset(100% 0 0 0);transition:clip-path 1s cubic-bezier(.65,0,.35,1) var(--d,0s),transform .5s}
+  .js .grade-projetos button.visto img,.js .grade-obras button.visto img,.js .sobre-fotos figure.visto img,.js .entrega.visto .foto img{clip-path:inset(0 0 0 0)}
+  .js .grade-projetos button,.js .grade-obras button,.js .sobre-fotos figure,.js .entrega .foto{background:transparent}
+  .js .grade-projetos button:not(.visto) .lupa,.js .grade-obras button:not(.visto) .lupa{opacity:0}
+  .js .entrega .foto img{transition-delay:calc(var(--d,0s) + .15s)}
+
+  /* Ícones dos serviços desenhados como traço técnico */
+  .js .servico svg [pathLength]{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.1s cubic-bezier(.6,0,.3,1) calc(var(--d,0s) + .25s)}
+  .js .servico.visto svg [pathLength]{stroke-dashoffset:0}
+  .js .servico svg circle[fill="currentColor"]{opacity:0}
+
+  /* Plantas dos terrenos: traça o lote, estica a trena, levanta a casa */
+  .js .modelo .pl-t{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1s cubic-bezier(.6,0,.3,1) calc(var(--d,0s) + .2s)}
+  .js .modelo .pl-r{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .7s ease calc(var(--d,0s) + .55s)}
+  .js .modelo .pl-x{opacity:0;transition:opacity .4s ease calc(var(--d,0s) + .9s)}
+  .js .modelo .pl-c{transform:scaleY(0);transform-box:fill-box;transform-origin:50% 100%;transition:transform .8s cubic-bezier(.2,.7,.2,1) calc(var(--d,0s) + .8s)}
+  .js .modelo.visto .pl-t,.js .modelo.visto .pl-r{stroke-dashoffset:0}
+  .js .modelo.visto .pl-x{opacity:1}
+  .js .modelo.visto .pl-c{transform:none}
+  .modelo.surge{animation:surge .45s cubic-bezier(.2,.7,.2,1) both}
+
+  /* Etapas acendem em sequência */
+  .js .etapa-num span{opacity:0;transform:scale(.4);transition:transform .5s cubic-bezier(.3,1.6,.5,1) calc(var(--i)*.38s),opacity .3s ease calc(var(--i)*.38s)}
+  .js .etapa-num::after{transform:scaleX(0);transform-origin:0 50%;transition:transform .4s linear calc(var(--i)*.38s + .22s)}
+  .js .etapa h3,.js .etapa p{opacity:0;transform:translateY(10px);transition:opacity .5s ease calc(var(--i)*.38s + .1s),transform .5s ease calc(var(--i)*.38s + .1s)}
+  .js .etapas.visto .etapa-num span{opacity:1;transform:none}
+  .js .etapas.visto .etapa-num::after{transform:none}
+  .js .etapas.visto .etapa h3,.js .etapas.visto .etapa p{opacity:1;transform:none}
+
+  /* Respostas e lightbox */
+  .perguntas details[open] .resp{animation:abre .3s ease both}
+  #lb-img.troca{animation:troca .35s ease both}
+  .wa-flutuante.chama{animation:pulso 1.6s ease-out 3}
+  .btn-azul,.btn-wa{position:relative;overflow:hidden}
+  .btn-azul::after,.btn-wa::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s ease;pointer-events:none}
+  .btn-azul:hover::after,.btn-wa:hover::after{transform:translateX(120%)}
+}
+@media (prefers-reduced-motion:no-preference) and (max-width:1000px){
+  .js .etapa-num::after{transform:scaleY(0);transform-origin:50% 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7Zm-7.01 15.24h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.66.31c-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-lupa" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16 16l4.5 4.5M11 8v6M8 11h6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-esq" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-dir" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 64 64"><path d="M52.6 20.5A24 24 0 1 0 55.6 41" fill="none" stroke="currentColor" stroke-width="7.5" stroke-linecap="round"/><path d="M19 38.5L32 27l13.5 12" fill="none" stroke="currentColor" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M45.5 39L55.6 41" stroke="currentColor" stroke-width="5.4" stroke-linecap="round"/><rect x="28" y="36" width="8" height="7.5" rx="1" fill="currentColor"/></symbol>
+</svg>
+
+<header class="header" id="topo">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Constrular, voltar ao início">
+      <svg style="color:var(--azul)" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span>Constrular</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span></button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#casas">Modelos de casas</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#obras">Obras entregues</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn btn-wa" href="https://wa.me/5586981550546?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Constrular%20e%20quero%20saber%20mais%20sobre%20a%20constru%C3%A7%C3%A3o%20da%20minha%20casa." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-texto">
+      <p class="hero-local entra"><svg aria-hidden="true"><use href="#i-pin"/></svg>Parnaíba, Piauí</p>
+      <h1 class="entra d1">A sua casa, do projeto à entrega da chave.</h1>
+      <p class="hero-sub entra d2">A Constrular projeta e constrói casas residenciais em Parnaíba. Você escolhe o modelo que cabe no seu terreno, a gente cuida do financiamento pela Caixa, da obra e da documentação.</p>
+      <div class="hero-acoes entra d3">
+        <a class="btn btn-azul" href="#casas">Ver modelos de casas</a>
+        <a class="btn btn-linha" href="https://wa.me/5586981550546?text=Ol%C3%A1!%20Quero%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20construir%20minha%20casa." target="_blank" rel="noopener">Fazer uma simulação</a>
+      </div>
+      <ul class="hero-fatos entra d4">
+        <li><strong>Financiável pela Caixa</strong>com uso do FGTS</li>
+        <li><strong>Entrada facilitada</strong>direto com a construtora</li>
+        <li><strong>19 modelos</strong>de 51 m² a 151 m²</li>
+      </ul>
+    </div>
+    <figure class="hero-foto entra d2">
+      <div class="trena" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="moldura">
+        <img src="img/casa-tijolinho.webp" width="800" height="835" alt="Fachada de casa entregue pela Constrular, com garagem coberta, pilar em madeira e parede em tijolo aparente" fetchpriority="high">
+      </div>
+      <figcaption>Casa entregue pela Constrular em Parnaíba.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="secao" id="servicos" aria-labelledby="t-servicos">
+  <div class="wrap">
+    <div class="secao-cab">
+      <h2 id="t-servicos">O que a Constrular faz</h2>
+      <p>Especializada em obras residenciais, com engenheiro civil responsável por cada etapa.</p>
+    </div>
+    <div class="servicos">
+      <div class="servico">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M4 15L16 5l12 10M7 13v14h18V13M13 27v-8h6v8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <h3>Obras residenciais</h3>
+        <p>Construção da casa completa, da fundação ao acabamento, com casa murada e calçada prontas.</p>
+      </div>
+      <div class="servico">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M5 27V5h22v22H5ZM5 15h9v12M14 5v6M20 15h7M20 15v5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <h3>Projetos e execução</h3>
+        <p>Elaboração do projeto arquitetônico e execução da obra. Projeto e orçamento caminham juntos.</p>
+      </div>
+      <div class="servico">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle pathLength="1" cx="14" cy="14" r="8" fill="none" stroke="currentColor" stroke-width="2.2"/><path pathLength="1" d="M20 20l7 7M10 15l3-3 3 3v3h-6v-3Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <h3>Avaliação de imóveis</h3>
+        <p>Avaliação técnica do valor do seu imóvel para venda, compra ou financiamento.</p>
+      </div>
+      <div class="servico">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path pathLength="1" d="M6 25c0-5 4-8 10-8s10 3 10 8M16 14a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Consultoria</h3>
+        <p>Orientação para quem quer construir e não sabe por onde começar: terreno, custos e documentação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao catalogo" id="casas" aria-labelledby="t-casas">
+  <div class="wrap">
+    <div class="secao-cab">
+      <h2 id="t-casas">Escolha a casa pelo tamanho do seu terreno</h2>
+      <p>Cada modelo do catálogo foi pensado para uma medida de terreno. Selecione a medida do seu e veja as casas que cabem nele.</p>
+    </div>
+    <div class="filtro" role="group" aria-label="Filtrar pelo tamanho do terreno">
+      <span class="filtro-titulo" id="filtro-titulo">Meu terreno tem:</span>
+      <button class="chip" type="button" data-terreno="todos" aria-pressed="true">Ver todos</button>
+      <button class="chip" type="button" data-terreno="7x25" aria-pressed="false">7 × 25 m</button>
+      <button class="chip" type="button" data-terreno="8x20" aria-pressed="false">8 × 20 m</button>
+      <button class="chip" type="button" data-terreno="8x25" aria-pressed="false">8 × 25 m</button>
+      <button class="chip" type="button" data-terreno="10x20" aria-pressed="false">10 × 20 m</button>
+      <button class="chip" type="button" data-terreno="10x25" aria-pressed="false">10 × 25 m</button>
+      <button class="chip" type="button" data-terreno="10x30" aria-pressed="false">10 × 30 m</button>
+      <button class="chip" type="button" data-terreno="15x25" aria-pressed="false">15 × 25 m</button>
+    </div>
+    <p class="filtro-info" id="filtro-info" aria-live="polite">Mostrando os 19 modelos do catálogo.</p>
+    <p class="planta-legenda" aria-hidden="true"><span><i></i>Terreno</span><span><i class="c"></i>Área construída aproximada</span><span><i class="t"></i>Medidas</span></p>
+    <ul class="modelos" id="modelos"></ul>
+    <p class="vazio" id="vazio" hidden>Nenhum modelo do catálogo cabe nessa medida. Fale com a gente: a Constrular também elabora projetos sob medida.</p>
+    <p class="catalogo-nota">Valores de referência do catálogo Constrular 2025, sem a compra do lote e sujeitos a alteração sem aviso prévio. Casas Darya e Dione em acabamento médio padrão. Confirme o valor atualizado pelo WhatsApp.</p>
+  </div>
+</section>
+
+<section class="secao" id="como-funciona" aria-labelledby="t-etapas">
+  <div class="wrap">
+    <div class="secao-cab">
+      <h2 id="t-etapas">Como funciona, do primeiro contato até a chave</h2>
+      <p>Planejamento econômico vem antes do primeiro tijolo. Por isso projeto e orçamento são feitos juntos, com você.</p>
+    </div>
+    <ol class="etapas">
+      <li class="etapa" style="--i:0"><div class="etapa-num"><span>1</span></div><h3>Conversa e simulação</h3><p>Você conta o que precisa e fazemos a simulação do financiamento com a sua renda.</p></li>
+      <li class="etapa" style="--i:1"><div class="etapa-num"><span>2</span></div><h3>Projeto e orçamento</h3><p>Escolha um modelo do catálogo ou personalize. Acabamentos definidos com você.</p></li>
+      <li class="etapa" style="--i:2"><div class="etapa-num"><span>3</span></div><h3>Financiamento e documentação</h3><p>Cuidamos do processo junto à Caixa, com uso do FGTS e entrada facilitada.</p></li>
+      <li class="etapa" style="--i:3"><div class="etapa-num"><span>4</span></div><h3>Obra acompanhada</h3><p>Cada etapa da construção é acompanhada pelo engenheiro responsável.</p></li>
+      <li class="etapa" style="--i:4"><div class="etapa-num"><span>5</span></div><h3>Entrega das chaves</h3><p>Casa pronta, murada e com documentação. O dia que a gente mais gosta.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="secao projetos" id="projetos" aria-labelledby="t-projetos">
+  <div class="wrap">
+    <div class="secao-cab">
+      <h2 id="t-projetos">Projetos 3D</h2>
+      <p>Antes da obra começar, você vê a sua casa pronta. Alguns dos projetos desenvolvidos pela Constrular.</p>
+    </div>
+    <div class="grade-projetos" data-galeria="projetos">
+      <button type="button" data-legenda="Projeto de fachada contemporânea com iluminação noturna"><img src="img/render-moderna.webp" width="800" height="818" alt="Projeto 3D de casa contemporânea com garagem iluminada" loading="lazy" style="object-position:50% 62%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto com área gourmet integrada e pergolado"><img src="img/render-pergolado.webp" width="800" height="858" alt="Projeto 3D de casa com pergolado, área gourmet e jardim iluminado" loading="lazy" style="object-position:50% 45%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto com piscina e área de lazer"><img src="img/render-piscina.webp" width="800" height="823" alt="Projeto 3D de casa com piscina, área gourmet e paginação de piso no jardim" loading="lazy" style="object-position:50% 55%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto de fachada com pórtico e caminho de pedras"><img src="img/render-rosa.webp" width="800" height="730" alt="Projeto 3D de fachada com pórtico, porta em madeira e garagem" loading="lazy" style="object-position:50% 50%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto de área gourmet com bancada e ripado em madeira"><img src="img/render-gourmet.webp" width="800" height="600" alt="Projeto 3D de área gourmet com bancada, banquetas e ripado de madeira" loading="lazy"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto de casa térrea com revestimento em pedra"><img src="img/render-noite.webp" width="800" height="550" alt="Projeto 3D de casa térrea com fachada em pedra e jardim com ciprestes" loading="lazy" style="object-position:50% 30%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto de casa com varanda e jardim frontal"><img src="img/render-palmeira.webp" width="800" height="570" alt="Projeto 3D de casa térrea com garagem, palmeira e jardim frontal" loading="lazy"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Projeto de casa com telhado aparente e varanda"><img src="img/render-pedra.webp" width="800" height="838" alt="Projeto 3D de casa com telhado cerâmico, pedra e varanda com jardineira" loading="lazy" style="object-position:50% 40%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+    </div>
+    <p class="projetos-nota">Imagens ilustrativas de projetos.</p>
+  </div>
+</section>
+
+<section class="secao" id="obras" aria-labelledby="t-obras">
+  <div class="wrap">
+    <div class="secao-cab">
+      <h2 id="t-obras">Obras entregues em Parnaíba</h2>
+      <p>Fotos reais de casas construídas pela Constrular. Toque em uma foto para ampliar.</p>
+    </div>
+    <div class="grade-obras" data-galeria="obras">
+      <button type="button" class="alta" data-legenda="Casa com garagem coberta e tijolo aparente"><img src="img/varanda-madeira.webp" width="800" height="798" alt="Garagem coberta com pilar de madeira e piso intertravado" loading="lazy" style="object-position:40% 50%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Fachada com revestimento em pedra"><img src="img/casa-cinza.webp" width="800" height="785" alt="Casa cinza com coluna em pedra, porta de madeira e calçada de concreto" loading="lazy" style="object-position:50% 30%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Casa com telhado cerâmico aparente"><img src="img/casa-telha.webp" width="800" height="805" alt="Casa com telhado cerâmico, platibanda cinza e porta de madeira" loading="lazy" style="object-position:50% 45%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" class="alta" data-legenda="Casa com jardim gramado e área gourmet"><img src="img/casa-jardim.webp" width="800" height="668" alt="Casa com jardim gramado, caminho de placas e área gourmet ao fundo" loading="lazy" style="object-position:30% 50%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Cozinha com bancada em granito"><img src="img/cozinha.webp" width="800" height="848" alt="Cozinha com bancada em granito preto e pendentes" loading="lazy" style="object-position:50% 65%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Casa Darya, um dos modelos do catálogo"><img src="img/casa-darya.webp" width="650" height="600" alt="Casa Darya com garagem coberta e janelas brancas" loading="lazy" style="object-position:50% 60%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Sala e cozinha integradas com porcelanato"><img src="img/sala-cozinha.webp" width="800" height="700" alt="Sala integrada à cozinha americana com piso em porcelanato" loading="lazy" style="object-position:50% 55%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Fachada em tons de bege"><img src="img/casa-bege.webp" width="800" height="655" alt="Casa com fachada branca e bege, porta de vidro e calçada" loading="lazy" style="object-position:50% 50%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Circulação interna com porcelanato e portas em madeira"><img src="img/corredor.webp" width="800" height="700" alt="Corredor interno com porcelanato branco e portas de madeira" loading="lazy" style="object-position:50% 40%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+      <button type="button" data-legenda="Casa com revestimento em pedra e grades"><img src="img/casa-rose.webp" width="800" height="855" alt="Casa rosé com coluna em pedra e janelas com grade" loading="lazy" style="object-position:50% 40%"><span class="lupa" aria-hidden="true"><svg><use href="#i-lupa"/></svg></span></button>
+    </div>
+
+    <div class="entregas-cab">
+      <h3>Dia de entrega é o dia que a gente mais gosta</h3>
+      <p>É nesse momento que a gente vê o brilho nos olhos de cada cliente ao receber a chave da casa nova.</p>
+    </div>
+    <div class="entregas">
+      <figure class="entrega"><div class="foto"><img src="img/entrega-familia.webp" width="800" height="625" alt="Família recebendo a chave da casa nova na varanda" loading="lazy" style="object-position:50% 30%"></div><figcaption>Família recebendo a chave da casa nova.</figcaption></figure>
+      <figure class="entrega"><div class="foto"><img src="img/entrega-chaves.webp" width="800" height="710" alt="Casal recebendo a chave em frente à casa com telhado cerâmico" loading="lazy" style="object-position:50% 50%"></div><figcaption>Mais uma casa entregue.</figcaption></figure>
+      <figure class="entrega"><div class="foto"><img src="img/entrega-casal.webp" width="800" height="625" alt="Clientes recebendo a chave dentro da sala com piso em porcelanato marmorizado" loading="lazy" style="object-position:50% 30%"></div><figcaption>Dever cumprido e mais um sonho realizado.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="secao sobre" id="sobre" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <div class="sobre-fotos">
+      <figure class="f1"><img src="img/engenheiro.webp" width="390" height="525" alt="Hallyson Damasceno, engenheiro civil e responsável técnico da Constrular" loading="lazy" style="object-position:55% 30%"></figure>
+      <figure class="f2"><img src="img/obra-placa.webp" width="800" height="461" alt="Obra em andamento com a placa da Constrular" loading="lazy" style="object-position:28% 50%"></figure>
+      <figure class="f3"><img src="img/entrega-chaves.webp" width="800" height="710" alt="Entrega de chaves de uma casa construída pela Constrular" loading="lazy" style="object-position:50% 70%"></figure>
+    </div>
+    <div class="sobre-texto">
+      <h2 id="t-sobre">Construtora de Parnaíba, com engenheiro presente na obra</h2>
+      <p>A Constrular nasceu da experiência no mercado imobiliário de Parnaíba. Antes de fundar a construtora, o responsável técnico atuou como corretor de imóveis e viu de perto a dificuldade das famílias para tirar a casa própria do papel.</p>
+      <p>Hoje, formado em engenharia civil, ele acompanha cada obra pessoalmente: do projeto e do orçamento até a vistoria final. Isso permite entregar casas financiáveis pela Caixa, com entrada facilitada, documentação inclusa e acabamento escolhido junto com o cliente.</p>
+      <p>Mais de 380 publicações no Instagram registram obras em andamento e casas entregues na cidade.</p>
+      <div class="assinatura">
+        <svg class="selo" aria-hidden="true" style="color:var(--azul)"><use href="#i-logo"/></svg>
+        <div><strong>Hallyson Damasceno</strong><span>Engenheiro civil, responsável técnico da Constrular</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao faq" id="duvidas" aria-labelledby="t-duvidas">
+  <div class="wrap">
+    <div class="secao-cab">
+      <h2 id="t-duvidas">Dúvidas frequentes</h2>
+      <p>Não achou sua resposta? Mande sua pergunta pelo WhatsApp que a equipe responde.</p>
+    </div>
+    <div class="perguntas">
+      <details>
+        <summary>Preciso já ter um terreno para construir?</summary>
+        <div class="resp"><p>Os valores do catálogo não incluem o lote. Se você já tem terreno, escolhemos o modelo que cabe nele. Se ainda não tem, fale com a gente: a Constrular indica opções de lotes em Parnaíba.</p></div>
+      </details>
+      <details>
+        <summary>A casa pode ser financiada pela Caixa?</summary>
+        <div class="resp"><p>Sim. Os modelos do catálogo são financiáveis pela Caixa Econômica Federal, com entrada facilitada pela construtora. Fazemos a simulação com base na sua renda antes de qualquer compromisso.</p></div>
+      </details>
+      <details>
+        <summary>Posso usar o meu FGTS?</summary>
+        <div class="resp"><p>Pode. A Constrular executa obras financiadas com recursos do FGTS, seguindo as regras da Caixa para cada caso.</p></div>
+      </details>
+      <details>
+        <summary>Dá para mudar o projeto ou escolher os acabamentos?</summary>
+        <div class="resp"><p>Sim. Alguns modelos têm possibilidade de expansão ou versão com 3 quartos, e os acabamentos são escolhidos com você. Também desenvolvemos projetos sob medida.</p></div>
+      </details>
+      <details>
+        <summary>Quem acompanha a obra?</summary>
+        <div class="resp"><p>O engenheiro civil responsável técnico da Constrular acompanha todas as etapas, e você pode visitar a obra para ver o andamento.</p></div>
+      </details>
+      <details>
+        <summary>A Constrular faz avaliação de imóveis?</summary>
+        <div class="resp"><p>Faz. Além de construir, oferecemos avaliação de imóveis e consultoria para quem vai comprar, vender ou construir.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="secao contato" id="contato" aria-labelledby="t-contato">
+  <div class="wrap">
+    <div class="contato-info">
+      <h2 id="t-contato">Vamos conversar sobre a sua casa</h2>
+      <p>Atendimento pelo WhatsApp e no escritório, em Parnaíba.</p>
+      <ul class="contato-lista">
+        <li><svg aria-hidden="true"><use href="#i-wa"/></svg><div><a href="https://wa.me/5586981550546" target="_blank" rel="noopener">(86) 98155-0546</a><small>WhatsApp</small></div></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><a href="https://maps.app.goo.gl/pmg2JSEReBo4WXJX7" target="_blank" rel="noopener">Av. São Sebastião, 2176, Pindorama</a><small>Parnaíba-PI</small></div></li>
+        <li><svg aria-hidden="true"><use href="#i-insta"/></svg><div><a href="https://www.instagram.com/construtora.constrular/" target="_blank" rel="noopener">@construtora.constrular</a><small>Instagram</small></div></li>
+      </ul>
+      <div class="mapa">
+        <iframe title="Mapa com a localização da Constrular em Parnaíba" src="https://www.google.com/maps?q=Av.+S%C3%A3o+Sebasti%C3%A3o,+2176,+Pindorama,+Parna%C3%ADba+-+PI&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Peça sua simulação</h3>
+      <p>Preencha e envie. A mensagem abre pronta no WhatsApp da Constrular.</p>
+      <div class="campo" id="c-nome">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" autocomplete="name" required>
+        <span class="erro" id="erro-nome">Informe seu nome para continuar.</span>
+      </div>
+      <div class="campo">
+        <label for="modelo">Modelo de interesse</label>
+        <select id="modelo" name="modelo"><option value="">Ainda não sei</option></select>
+      </div>
+      <div class="campo">
+        <fieldset>
+          <legend>Você já tem terreno?</legend>
+          <div class="opcoes">
+            <label><input type="radio" name="terreno" value="Sim, já tenho terreno" checked>Sim</label>
+            <label><input type="radio" name="terreno" value="Ainda não tenho terreno">Ainda não</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="campo">
+        <label for="msg">Mensagem (opcional)</label>
+        <textarea id="msg" name="msg" placeholder="Ex.: medida do terreno, bairro, dúvidas sobre financiamento"></textarea>
+      </div>
+      <button class="btn btn-wa" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar pelo WhatsApp</button>
+      <p class="form-nota">Seus dados não ficam salvos neste site. Eles vão apenas na mensagem que você envia.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Constrular, voltar ao início">
+      <svg aria-hidden="true"><use href="#i-logo"/></svg><span>Constrular</span>
+    </a>
+    <div class="rodape-links">
+      <a href="#casas">Modelos</a><a href="#obras">Obras</a><a href="#duvidas">Dúvidas</a><a href="https://www.instagram.com/construtora.constrular/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p style="margin:0">© <span id="ano">2026</span> Constrular Construtora. Parnaíba-PI.</p>
+  </div>
+</footer>
+
+<a class="wa-flutuante oculto" id="wa-flutuante" href="https://wa.me/5586981550546?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Constrular." target="_blank" rel="noopener" aria-label="Falar com a Constrular no WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<dialog class="lightbox" id="lightbox" aria-label="Foto ampliada">
+  <div class="lb-palco" id="lb-palco"><img id="lb-img" alt=""></div>
+  <div class="lb-rodape"><span id="lb-legenda"></span><span id="lb-cont" aria-live="polite"></span></div>
+  <button class="lb-btn lb-fechar" type="button" id="lb-fechar" aria-label="Fechar"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-ant" type="button" id="lb-ant" aria-label="Foto anterior"><svg aria-hidden="true"><use href="#i-esq"/></svg></button>
+  <button class="lb-btn lb-prox" type="button" id="lb-prox" aria-label="Próxima foto"><svg aria-hidden="true"><use href="#i-dir"/></svg></button>
+</dialog>
+
+<script>
+(function(){
+  var WA = '5586981550546';
+  function waLink(txt){ return 'https://wa.me/' + WA + '?text=' + encodeURIComponent(txt); }
+
+  /* Catálogo */
+  var modelos = [
+    {n:'Pérola', a:51.49, f:7, p:25, v:131299.50, t:['Opção com telhado aparente']},
+    {n:'Iara', a:57.26, f:8, p:20, v:146013.00, t:[]},
+    {n:'Naia', a:61.00, f:10, p:20, v:155550.00, t:['Possibilidade de expansão']},
+    {n:'Kelen', a:62.82, f:8, p:25, v:160191.00, t:['Possibilidade de expansão']},
+    {n:'Sirena', a:64.32, f:8, p:20, v:164016.00, t:[]},
+    {n:'Stella', a:64.79, f:8, p:25, v:165112.50, t:[]},
+    {n:'Gal', a:70.81, f:8, p:25, v:180565.50, t:[]},
+    {n:'Naia com 3 quartos', a:72.94, f:10, p:20, v:184977.00, t:['3 quartos','Casa murada']},
+    {n:'Kaia', a:73.43, f:8, p:25, v:187246.50, t:['Possibilidade de expansão']},
+    {n:'Meri', a:82.89, f:10, p:20, v:211369.50, t:[]},
+    {n:'Kaia expandida', a:89.49, f:8, p:25, v:228199.50, t:['Versão expandida']},
+    {n:'Mia', a:89.83, f:10, p:20, v:229066.50, t:[]},
+    {n:'Marjorie', a:95.76, f:15, p:25, v:254388.00, t:['3 suítes','Varanda','Cozinha integrada']},
+    {n:'Netuno', a:99.33, f:8, p:20, v:253291.50, t:[]},
+    {n:'Nalu', a:105.08, f:10, p:25, v:267954.00, t:[]},
+    {n:'Margot', a:108.03, f:10, p:25, v:275476.50, t:[]},
+    {n:'Margot com garagem', a:125.76, f:10, p:25, v:315588.00, t:['Com garagem']},
+    {n:'Darya', a:140.42, f:10, p:30, v:358071.00, t:['Médio padrão']},
+    {n:'Dione', a:151.01, f:10, p:30, v:385075.50, t:['Médio padrão']}
+  ];
+  var brl = new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+  var m2 = new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+
+  function planta(f,p,a){
+    /* desenha o terreno em escala: 30 m de fundo = 150 px */
+    var s = 5, w = f*s, h = p*s, ox = 26, oy = 6;
+    var W = w + ox + 6, H = h + oy + 26;
+    /* área construída em escala: largura do terreno menos 1 m de cada lado, recuo frontal de 3 m */
+    var hc = Math.min(h - 4*s, (a/(f-2))*s);
+    var ticks = '';
+    for (var i=0;i<=f;i++){ ticks += '<line x1="'+(ox+i*s)+'" y1="'+(oy+h+8)+'" x2="'+(ox+i*s)+'" y2="'+(oy+h+(i%5===0?14:11))+'" stroke="#C99700" stroke-width="1" class="pl-x"/>'; }
+    return '<svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'" role="img" aria-label="Terreno de '+f+' por '+p+' metros">'+
+      '<rect x="'+ox+'" y="'+oy+'" width="'+w+'" height="'+h+'" fill="#fff" stroke="#0A2540" stroke-width="1.6" pathLength="1" class="pl-t"/>'+
+      '<rect x="'+(ox+s)+'" y="'+(oy+h-3*s-hc)+'" width="'+(w-2*s)+'" height="'+hc+'" fill="#0F5FB3" fill-opacity=".18" stroke="#0F5FB3" stroke-width="1" stroke-dasharray="3 2" class="pl-c"/>'+
+      '<line x1="'+ox+'" y1="'+(oy+h+8)+'" x2="'+(ox+w)+'" y2="'+(oy+h+8)+'" stroke="#F2B705" stroke-width="2" pathLength="1" class="pl-r"/>'+ticks+
+      '<text x="'+(ox+w/2)+'" y="'+(oy+h+25)+'" text-anchor="middle" font-family="Archivo,sans-serif" font-size="11" font-weight="700" fill="#0A2540" class="pl-x">'+f+' m</text>'+
+      '<line x1="'+(ox-8)+'" y1="'+oy+'" x2="'+(ox-8)+'" y2="'+(oy+h)+'" stroke="#F2B705" stroke-width="2" pathLength="1" class="pl-r"/>'+
+      '<text x="'+(ox-13)+'" y="'+(oy+h/2)+'" text-anchor="middle" font-family="Archivo,sans-serif" font-size="11" font-weight="700" fill="#0A2540" class="pl-x" transform="rotate(-90 '+(ox-13)+' '+(oy+h/2)+')">'+p+' m</text>'+
+      '</svg>';
+  }
+
+  var lista = document.getElementById('modelos');
+  var sel = document.getElementById('modelo');
+  var html = '';
+  modelos.forEach(function(m){
+    var tags = m.t.map(function(t){return '<li>'+t+'</li>';}).join('');
+    var msg = 'Olá! Vi no site da Constrular a Casa ' + m.n + ' (' + m2.format(m.a) + ' m², terreno ' + m.f + 'x' + m.p + ' m) e tenho interesse. Pode me passar mais informações?';
+    html += '<li class="modelo" data-f="'+m.f+'" data-p="'+m.p+'">'+
+      '<div class="modelo-planta">'+planta(m.f,m.p,m.a)+'</div>'+
+      '<div class="modelo-corpo">'+
+        '<h3>Casa '+m.n+'</h3>'+
+        '<dl class="modelo-dados"><div><dt>Área construída</dt><dd>'+m2.format(m.a)+' m²</dd></div><div><dt>Terreno</dt><dd>'+m.f+' × '+m.p+' m</dd></div></dl>'+
+        (tags ? '<ul class="modelo-tags">'+tags+'</ul>' : '')+
+        '<div class="modelo-preco">A partir de<strong>'+brl.format(m.v)+'</strong></div>'+
+        '<a class="btn btn-azul" href="'+waLink(msg)+'" target="_blank" rel="noopener" aria-label="Tenho interesse na Casa '+m.n+'">Tenho interesse</a>'+
+      '</div></li>';
+    var o = document.createElement('option'); o.value = 'Casa ' + m.n; o.textContent = 'Casa ' + m.n + ' (' + m2.format(m.a) + ' m²)'; sel.appendChild(o);
+  });
+  lista.innerHTML = html;
+
+  function surgir(k){ k.classList.add('visto'); k.style.setProperty('--d','0s'); k.classList.remove('surge'); void k.offsetWidth; k.classList.add('surge'); }
+  var chips = document.querySelectorAll('.chip');
+  var info = document.getElementById('filtro-info');
+  var vazio = document.getElementById('vazio');
+  var cards = lista.querySelectorAll('.modelo');
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      chips.forEach(function(x){ x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
+      var t = c.getAttribute('data-terreno'), n = 0;
+      if (t === 'todos'){
+        cards.forEach(function(k){ if (k.hidden) surgir(k); k.hidden = false; n++; });
+        info.textContent = 'Mostrando os ' + n + ' modelos do catálogo.';
+      } else {
+        var d = t.split('x'), F = +d[0], P = +d[1];
+        cards.forEach(function(k){
+          var ok = (+k.getAttribute('data-f') <= F) && (+k.getAttribute('data-p') <= P);
+          if (ok && k.hidden) surgir(k);
+          k.hidden = !ok; if (ok) n++;
+        });
+        info.textContent = n === 0 ? '' : (n === 1 ? '1 modelo cabe' : n + ' modelos cabem') + ' em um terreno de ' + F + ' × ' + P + ' m.';
+      }
+      vazio.hidden = n !== 0;
+    });
+  });
+  info.textContent = 'Mostrando os ' + cards.length + ' modelos do catálogo.';
+  var fatoModelos = document.querySelector('.hero-fatos li:nth-child(3) strong');
+  if (fatoModelos) fatoModelos.textContent = cards.length + ' modelos';
+
+
+  /* Animações ao rolar */
+  var anima = document.documentElement.classList.contains('js');
+  var io = anima ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('visto'); io.unobserve(e.target); } });
+  }, {threshold:0.01, rootMargin:'0px 0px -8% 0px'}) : null;
+  function observa(sel, passo, colunas){
+    document.querySelectorAll(sel).forEach(function(el, i){
+      if (!io){ el.classList.add('visto'); return; }
+      var k = colunas ? i % colunas : i;
+      el.style.setProperty('--d', (k * passo).toFixed(2) + 's');
+      io.observe(el);
+    });
+  }
+  observa('.secao-cab', 0);
+  observa('.entregas-cab', 0);
+  observa('.servico', 0.12);
+  observa('.filtro', 0);
+  observa('.etapas', 0);
+  observa('.grade-projetos button', 0.08, 3);
+  observa('.grade-obras button', 0.07, 4);
+  observa('.entrega', 0.12);
+  observa('.sobre-fotos figure', 0.15);
+  observa('.sobre-texto', 0.1);
+  observa('.perguntas details', 0.06);
+  observa('.contato-info', 0);
+  observa('.form', 0.15);
+  function colunasModelos(){ var w = lista.clientWidth; return Math.max(1, Math.floor((w + 18) / (270 + 18))); }
+  observa('.modelo', 0.08, colunasModelos());
+
+  /* Contador do hero */
+  var numModelos = document.querySelector('.hero-fatos li:nth-child(3) strong');
+  if (anima && numModelos){
+    var alvo = cards.length, t0 = null;
+    numModelos.textContent = '0 modelos';
+    setTimeout(function(){
+      requestAnimationFrame(function passo(ts){
+        if (!t0) t0 = ts;
+        var k = Math.min(1, (ts - t0) / 1100), v = Math.round(alvo * (1 - Math.pow(1 - k, 3)));
+        numModelos.textContent = v + ' modelos';
+        if (k < 1) requestAnimationFrame(passo);
+      });
+    }, 650);
+  }
+
+  /* Header e menu */
+  var header = document.querySelector('.header');
+  var btnMenu = document.querySelector('.menu-btn');
+  var waF = document.getElementById('wa-flutuante');
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    header.classList.toggle('rolou', y > 8);
+    var some = y < 500;
+    if (!some && waF.classList.contains('oculto') && !waF.dataset.chamou){ waF.dataset.chamou = '1'; waF.classList.add('chama'); }
+    waF.classList.toggle('oculto', some);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  function fecharMenu(){ document.body.classList.remove('menu-aberto'); btnMenu.setAttribute('aria-expanded','false'); btnMenu.setAttribute('aria-label','Abrir menu'); }
+  btnMenu.addEventListener('click', function(){
+    var aberto = document.body.classList.toggle('menu-aberto');
+    btnMenu.setAttribute('aria-expanded', aberto ? 'true' : 'false');
+    btnMenu.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+  });
+  document.querySelectorAll('#menu a').forEach(function(a){ a.addEventListener('click', fecharMenu); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && document.body.classList.contains('menu-aberto')) { fecharMenu(); btnMenu.focus(); } });
+  window.addEventListener('resize', function(){ if (window.innerWidth > 960) fecharMenu(); });
+
+  /* Lightbox */
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbLeg = document.getElementById('lb-legenda'), lbCont = document.getElementById('lb-cont');
+  var atual = [], idx = 0, origem = null;
+  function mostrar(i){
+    idx = (i + atual.length) % atual.length;
+    var b = atual[idx], im = b.querySelector('img');
+    lbImg.src = im.getAttribute('src'); lbImg.alt = im.alt;
+    lbImg.classList.remove('troca'); void lbImg.offsetWidth; lbImg.classList.add('troca');
+    lbLeg.textContent = b.getAttribute('data-legenda') || '';
+    lbCont.textContent = (idx+1) + ' de ' + atual.length;
+  }
+  function abrir(gal, i, btn){
+    atual = Array.prototype.slice.call(gal.querySelectorAll('button')); origem = btn; mostrar(i);
+    if (typeof lb.showModal === 'function') lb.showModal(); else lb.setAttribute('open','');
+    document.body.style.overflow = 'hidden';
+  }
+  function fechar(){ if (lb.open && typeof lb.close === 'function') lb.close(); else lb.removeAttribute('open'); }
+  lb.addEventListener('close', function(){ document.body.style.overflow = ''; if (origem) origem.focus(); });
+  document.querySelectorAll('[data-galeria]').forEach(function(g){
+    g.querySelectorAll('button').forEach(function(b,i){ b.addEventListener('click', function(){ abrir(g,i,b); }); });
+  });
+  document.getElementById('lb-fechar').addEventListener('click', fechar);
+  document.getElementById('lb-ant').addEventListener('click', function(){ mostrar(idx-1); });
+  document.getElementById('lb-prox').addEventListener('click', function(){ mostrar(idx+1); });
+  document.getElementById('lb-palco').addEventListener('click', function(e){ if (e.target === this) fechar(); });
+  lb.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowLeft') mostrar(idx-1);
+    else if (e.key === 'ArrowRight') mostrar(idx+1);
+  });
+  var x0 = null;
+  lb.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) mostrar(dx < 0 ? idx+1 : idx-1); x0 = null;
+  });
+
+  /* Formulário */
+  var form = document.getElementById('form');
+  var nome = document.getElementById('nome'), cNome = document.getElementById('c-nome');
+  nome.addEventListener('input', function(){ if (nome.value.trim()) { cNome.classList.remove('invalido'); nome.removeAttribute('aria-invalid'); } });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var n = nome.value.trim();
+    if (!n){ cNome.classList.add('invalido'); nome.setAttribute('aria-invalid','true'); nome.setAttribute('aria-describedby','erro-nome'); nome.focus(); return; }
+    var mod = sel.value, ter = form.querySelector('input[name=terreno]:checked').value, msg = document.getElementById('msg').value.trim();
+    var txt = 'Olá! Meu nome é ' + n + '. Quero fazer uma simulação com a Constrular.' +
+      '\nModelo de interesse: ' + (mod || 'ainda não sei') +
+      '\nTerreno: ' + ter + (msg ? '\n' + msg : '');
+    var url = waLink(txt), w = window.open(url, '_blank');
+    if (w) { try { w.opener = null; } catch(err){} } else { window.location.href = url; }
+  });
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
